@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="MobileOptimized" content="320" />
+</head>
+<body>
+  <button onclick="showSceneViewer('Altis' , 'red');">AR Start</button>
+</body>
+<script type="text/javascript">
+	function showSceneViewer(car, color) {
+	    
+	    window.location.href =
+	        "intent://arvr.google.com/scene-viewer/1.0?file=" + strUrl + "#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;";
+	}
+</script>
+</html>
