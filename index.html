@@ -9,7 +9,7 @@
   <meta name="MobileOptimized" content="320" />
 </head>
 <body>
-  <button onclick="showSceneViewer('Cube_Gltf' , 'red');">AR Start</button>
+  <button onclick="showSceneViewer('Cube_Gltf1' , 'red');">AR Start</button>
 </body>
 <script type="text/javascript">
 	function showSceneViewer(car, color) {
@@ -18,4 +18,8 @@
 	        "intent://arvr.google.com/scene-viewer/1.0?file=" + strUrl + "#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;";
 	}
 </script>
+
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 </html>
