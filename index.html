@@ -7,15 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="HandheldFriendly" content="true" />
   <meta name="MobileOptimized" content="320" />
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js'></script>
+  <script src="js/mobile-detect.min.js"></script>
+  <script src="js/tt_ar.js"></script>
 </head>
 <body>
-  <button onclick="showSceneViewer('Altis' , 'red');">AR Start</button>
+  <button onclick="CallAr('Altis');">tt AR</button>
 </body>
-<script type="text/javascript">
-	function showSceneViewer(car, color) {
-		var strUrl = "https://fayaian.github.io/Files/" + car + ".glb";
-	    window.location.href =
-	        "intent://arvr.google.com/scene-viewer/1.0?file=" + strUrl + "#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;";
-	}
-</script>
 </html>
